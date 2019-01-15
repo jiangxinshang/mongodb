@@ -6,7 +6,7 @@ ADD init.sh  /
 #安装所需软件
 RUN     yum install -y mongodb-server  \
    &&   yum install -y mongodb \ 
-   &&   mkdir /data/db \
+   &&   mkdir -p /data/db \
    &&   chmod a+x /init.sh \
    &&   yum clean all && yum makecache
                     
